@@ -1,0 +1,57 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+*{
+   --white: hsl(0, 0%, 100%);
+   --lightGray: hsl(212, 45%, 89%);
+   --grayBlue: hsl(220, 15%, 55%);
+   --darkBlue: hsl(218, 44%, 22%);
+}
+@font-face {
+    font-family: Outfit;
+    @import: url(https://fonts.google.com/specimen/Outfit);
+  }
+
+body{
+    background-color: var(--lightGray)
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+}
+.card{
+width: 250px;
+border: solid 1px var(--white);
+background-color: var(--white);
+padding: 15px 20px;
+border-radius: 10px;
+}
+.card--body{
+    padding: 50px !important;
+}
+.card--image{
+    display: flex;
+    justify-content: center;
+}
+.card--image img {
+    width: 250px;
+    border-radius: 10px;
+}
+.card--text{
+    font-size: 15px;
+    font-family: Outfit;
+    text-align: center;
+}
+.card--title{
+    font-weight: 700 !important;
+    font-size: 20px;
+
+}
+.card--subtitle{
+    font-weight: 400 !important;
+    color: var(--grayBlue);
+    font-size: 15px;
+}
